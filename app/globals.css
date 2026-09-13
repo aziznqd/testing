@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f4f2;
+  --foreground: #050505;
+  --text: #f5f4f2
+}
+
+.dark {
+  --background: #050505;
+  --foreground: #f5f4f2;
+  --text: #f5f4f2;
+}
+
+@custom-variant dark (&:where(.dark, .dar
+k *));
+
+@theme {
+  --font-space-grotesk: var(--font-space-grotesk);
+  --font-montserrat: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-montserrat);
+  transition: background 0.2s, color 0.2s;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
