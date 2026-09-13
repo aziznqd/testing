@@ -34,7 +34,7 @@ export default function HeroVideo({ srcMp4, srcWebm, poster, children }: HeroVid
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden px-[clamp(1.5rem,5vw,6rem)]">
+    <section className="relative h-screen w-full overflow-hidden px-[clamp(1.5rem,5vw,6rem)] text-[#f5f4f2]">
       {/* Video layer */}
       <video
         ref={videoRef}

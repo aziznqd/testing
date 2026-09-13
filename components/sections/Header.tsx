@@ -9,7 +9,7 @@ export default function Header(){
     return(
         <HeaderVideo srcMp4="/noir-video.mp4">
                 <div>
-                    <h1 className="uppercase">
+                    <h1 className="uppercase text-text">
                         <span className="block leading-none font-space-grotesk font-bold text-[clamp(3.25rem,10vw,10.5rem)]">{t('name_1')}</span> 
                         <span className="block leading-none font-space-grotesk font-bold text-[clamp(3.25rem,10vw,10.5rem)] pl-[clamp(1.5rem,4vw,5rem)]">{t('name_2')}</span>
                     </h1>
