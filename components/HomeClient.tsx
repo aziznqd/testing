@@ -7,8 +7,6 @@ import { Locale } from "next-intl";
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import PageTransition from "./PageTransition";
-import Footer from "./Sections/Footer";
-import Header from "./Sections/Header";
 
 export default function HomeClient({
   changeLocalAction,
@@ -94,8 +92,6 @@ export default function HomeClient({
         </div>
       </header>
       <main>
-        <Header/>
-        <Footer/>
       </main>
     </>
   );
