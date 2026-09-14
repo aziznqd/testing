@@ -9,6 +9,7 @@ import gsap from "gsap";
 import PageTransition from "./PageTransition";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
+import CursorChaser from "./CursorChaser";
 
 export default function HomeClient({
   changeLocalAction,
@@ -94,6 +95,7 @@ export default function HomeClient({
         </div>
       </header>
       <main>
+        <CursorChaser/>
         <Header/>
         <Footer/>
       </main>
