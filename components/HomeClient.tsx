@@ -8,6 +8,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import PageTransition from "./PageTransition";
 import Header from "./sections/Header";
+import Footer from "./sections/Footer";
 
 export default function HomeClient({
   changeLocalAction,
@@ -94,6 +95,7 @@ export default function HomeClient({
       </header>
       <main>
         <Header/>
+        <Footer/>
       </main>
     </>
   );
