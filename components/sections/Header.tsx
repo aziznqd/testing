@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import HeaderVideo from "../HeaderTools/HeaderVideo";
+import HeaderVideo from "../HeaderVideo";
 import PlaceIcon from '@mui/icons-material/Place';
 
 export default function Header(){

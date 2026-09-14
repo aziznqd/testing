@@ -1,5 +1,5 @@
-import FooterLink from "../FooterTools/FooterLink";
-import FooterAnimation from "../FooterTools/FooterAnimation";
+import FooterLink from "../FooterLink";
+import FooterAnimation from "../FooterAnimation";
 
 export default function Footer() {
   return (

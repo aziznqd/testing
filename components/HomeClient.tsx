@@ -1,13 +1,13 @@
 "use client";
 
-import LanguageToggle from "@/components/Toogles/LanguageToggle";
+import LanguageToggle from "@/components/LanguageToggle";
 import Preloader from "@/components/Preloader";
-import { ThemeToggle } from "@/components/Toogles/ThemeToggle";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Locale } from "next-intl";
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import PageTransition from "./PageTransition";
-import Header from "./Sections/Header";
+import Header from "./sections/Header";
 
 export default function HomeClient({
   changeLocalAction,
