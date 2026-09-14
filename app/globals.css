@@ -3,6 +3,7 @@
 :root {
   --background: #f5f4f2;
   --foreground: #050505;
+  --text: #f5f4f2;
 }
 
 .dark {
@@ -15,6 +16,7 @@
 @theme {
   --font-space-grotesk: var(--font-space-grotesk);
   --font-montserrat: var(--font-montserrat);
+  --color-text: var(--text);
 }
 
 body {

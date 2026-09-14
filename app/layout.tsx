@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import {Space_Grotesk, Montserrat } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeProvider } from "@/components/Toogles/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
-import Footer from "@/components/sections/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",

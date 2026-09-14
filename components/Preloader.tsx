@@ -115,7 +115,7 @@ export default function Preloader({ onComplete, duration = 2.4 }: PreloaderProps
       {/* Bottom-right counter */}
       <div
         ref={counterRowRef}
-        className="absolute bottom-5 right-5 z-[2] flex items-end gap-[2px] sm:bottom-8 sm:right-8 md:bottom-12 md:right-16 font-space-grotesk"
+        className="absolute bottom-5 right-5 z-[2] flex items-end gap-[2px] sm:bottom-8 sm:right-8 md:bottom-12 md:right-16 font-space-grotesk text-text"
       >
         <span
           ref={counterRef}
