@@ -49,7 +49,7 @@ export default function CursorChaser({
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference will-change-transform"
+      className="pointer-events-none fixed invisible lg:visible left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference will-change-transform"
       style={{ width: size, height: size }}
     />
   );

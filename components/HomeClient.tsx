@@ -10,6 +10,7 @@ import PageTransition from "./PageTransition";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 import CursorChaser from "./CursorChaser";
+import Contact from "./sections/Contact";
 
 export default function HomeClient({
   changeLocalAction,
@@ -97,6 +98,7 @@ export default function HomeClient({
       <main>
         <CursorChaser/>
         <Header/>
+        <Contact/>
         <Footer/>
       </main>
     </>

@@ -17,6 +17,12 @@
   --font-space-grotesk: var(--font-space-grotesk);
   --font-montserrat: var(--font-montserrat);
   --color-text: var(--text);
+  --color-backgroud: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+input {
+    color: var(--foreground) !important;
 }
 
 body {
