@@ -8,5 +8,18 @@
   "Footer": {
     "animation_text_1": "Məhsuldarlıq",
     "animation_text_2": "Səmərəlilik"
+  },
+  "Contact": {
+    "placeholder_name": "Ad",
+    "placeholder_email": "E-poçt ünvanı",
+    "placeholder_topic": "Nə barədə danışmaq istərdiniz?",
+    "error_name": "Ad daxil edilməlidir.",
+    "error_email": "E-poçt ünvanı daxil edilməlidir",
+    "error_topic": "Mövzu daxil edilməlidir",
+    "form_success": "Mesaj göndərildi! Tezliklə sizinlə əlaqə saxlayacağam.",
+    "form_error": "Nəsə xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.",
+    "text_1": "Gəlin birlikdə sizin",
+    "text_2": "Növbəti Möhtəşəm İdeyanız",
+    "text_3": "Layihəniz var və ya sadəcə salam demək istəyirsiniz? Məlumatlarınızı formaya daxil edin, sizinlə əlaqə saxlayacağam."
   }
 }

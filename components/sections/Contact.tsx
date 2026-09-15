@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState, SyntheticEvent } from "react";
 
 interface ContactFormData {
@@ -82,6 +83,8 @@ export default function ContactSection() {
     }
   };
 
+  const t = useTranslations('Contact')
+
   return (
     <section className="px-[clamp(1.5rem,5vw,6rem)] py-8 md:py-10 relative z-30 leading-none">
       <div className="bg-foreground rounded-[2rem] md:rounded-[3rem] w-full overflow-hidden relative flex flex-col lg:flex-row items-stretch shadow-2xl">
@@ -95,7 +98,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-1 w-full">
               <input
                 type="text"
-                placeholder="First Name"
+                placeholder={t("placeholder_name")}
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -109,7 +112,7 @@ export default function ContactSection() {
               />
               {errors.name && (
                 <span className="text-red-500 text-xs font-semibold pl-4">
-                  Name is required
+                  {t("error_name")}
                 </span>
               )}
             </div>
@@ -117,7 +120,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-1 w-full">
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder={t("placeholder_email")}
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -131,14 +134,14 @@ export default function ContactSection() {
               />
               {errors.email && (
                 <span className="text-red-500 text-xs font-semibold pl-4">
-                  Email is required
+                  {t("error_email")}
                 </span>
               )}
             </div>
 
             <div className="flex flex-col gap-1 w-full flex-1">
               <textarea
-                placeholder="What would you like to talk about?"
+                placeholder={t("placeholder_topic")}
                 name="topic"
                 value={formData.topic}
                 onChange={handleChange}
@@ -152,7 +155,7 @@ export default function ContactSection() {
               />
               {errors.topic && (
                 <span className="text-red-500 text-xs font-semibold pl-4">
-                  Topic is required
+                  {t("error_topic")}
                 </span>
               )}
             </div>
@@ -167,12 +170,12 @@ export default function ContactSection() {
               </button>
               {submitStatus === "success" && (
                 <p className="text-green-600 text-xs font-semibold pl-4 pt-2">
-                  Message sent! I&apos;ll get back to you soon.
+                  {t("form_success")}
                 </p>
               )}
               {submitStatus === "error" && (
                 <p className="text-red-500 text-xs font-semibold pl-4 pt-2">
-                  Something went wrong. Please try again.
+                  {t("form_error")}
                 </p>
               )}
             </div>
@@ -183,15 +186,14 @@ export default function ContactSection() {
         <div className="w-full lg:w-1/2 relative z-10 flex flex-col justify-center bg-foreground text-backgroud px-8 pt-0 pb-8 md:px-12 md:pt-0 md:pb-12 lg:py-16 lg:pl-8 lg:pr-16 lg:pt-16">
           <h2 className="flex flex-col gap-2 mb-6 lg:mb-8">
             <span className="font-body text-[clamp(1.5rem,3vw,2.5rem)] font-light tracking-tight leading-tight text-background">
-              Let&apos;s build something amazing together for your
+              {t("text_1")}
             </span>
             <span className="font-heading text-[clamp(3.5rem,7vw,6.5rem)] font-bold font-space-grotesk tracking-tight leading-none text-backgroud">
-              Next Big Idea
+              {t("text_2")}
             </span>
           </h2>
           <p className="text-background text-sm md:text-base max-w-xl font-medium">
-            Have a project in mind or just want to say hi? Drop your details
-            below and I&apos;ll get back to you.
+              {t("text_3")}
           </p>
         </div>
       </div>

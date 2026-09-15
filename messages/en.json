@@ -8,5 +8,18 @@
   "Footer": {
     "animation_text_1": "Productivity",
     "animation_text_2": "Effectivity"
+  },
+  "Contact": {
+    "placeholder_name": "First Name",
+    "placeholder_email": "Email Address",
+    "placeholder_topic": "What would you like to talk about?",
+    "error_name": "Name is required",
+    "error_email": "Email is required",
+    "error_topic": "Topic is required",
+    "form_success": "Message sent! I'll get back to you soon.",
+    "form_error": "Something went wrong. Please try again.",
+    "text_1": "Let's build something amazing together for your",
+    "text_2": "Next Big Idea",
+    "text_3": "Have a project in mind or just want to say hi? Drop your details into form and I'll get back to you."
   }
 }
