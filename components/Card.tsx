@@ -17,7 +17,7 @@ export const cardList: CardProps[] = [
     title: "DevLab LLC",
     jobTitle: "Front-End Development Mentor",
     description: [
-      "Mentored frontend developers in building modern web applications using React, Next.js, Tailwind CSS, and other innovative technologies.",
+      "Mentored frontend developers in building modern web applications using React, Next.js, Tailwind CSS",
       "Reviewed code and taught best practices to improve code quality.",
       "Guided the team in creating responsive, scalable interfaces.",
     ],
