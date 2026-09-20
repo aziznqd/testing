@@ -11,6 +11,8 @@ import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 import CursorChaser from "./CursorChaser";
 import Contact from "./sections/Contact";
+import Test from "./Test";
+import Experience from "./sections/Experience";
 
 export default function HomeClient({
   changeLocalAction,
@@ -98,6 +100,7 @@ export default function HomeClient({
       <main>
         <CursorChaser/>
         <Header/>
+        <Experience/>
         <Contact/>
         <Footer/>
       </main>

@@ -86,7 +86,7 @@ export default function ContactSection() {
   const t = useTranslations('Contact')
 
   return (
-    <section className="px-[clamp(1.5rem,5vw,6rem)] py-8 md:py-10 relative z-30 leading-none">
+    <section className="px-[clamp(1.5rem,5vw,6rem)] py-8 md:py-10 relative z-30 leading-none font-space-grotesk">
       <div className="bg-foreground rounded-[2rem] md:rounded-[3rem] w-full overflow-hidden relative flex flex-col lg:flex-row items-stretch shadow-2xl">
         {/* LEFT SIDE: FORM ONLY */}
         <div className="w-full lg:w-1/2 relative z-10 flex flex-col bg-foreground p-8 pb-4 md:p-12 lg:py-16 lg:pl-16 lg:pr-8 lg:pb-16">
@@ -183,7 +183,7 @@ export default function ContactSection() {
         </div>
 
         {/* RIGHT SIDE: TEXT ONLY, BLACK & WHITE */}
-        <div className="w-full lg:w-1/2 relative z-10 flex flex-col justify-center bg-foreground text-backgroud px-8 pt-0 pb-8 md:px-12 md:pt-0 md:pb-12 lg:py-16 lg:pl-8 lg:pr-16 lg:pt-16">
+        <div className="w-full lg:w-1/2 relative z-10 flex flex-col justify-center bg-foreground text-backgroud px-8 pt-0 pb-8 md:px-12 md:pt-0 md:pb-12 lg:py-16 lg:pl-8 lg:pr-16 lg:pt-16 font-space-grotesk leading-none">
           <h2 className="flex flex-col gap-2 mb-6 lg:mb-8">
             <span className="font-body text-[clamp(1.5rem,3vw,2.5rem)] font-light tracking-tight leading-tight text-background">
               {t("text_1")}
